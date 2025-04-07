@@ -26,31 +26,13 @@ import {
 export default function Home() {
 
   const handleDownloadCV = () => {
-    const cvPath = '/assets/BsfinalCv.pdf';
-    
-    const fileName = 'BsfinalCv.pdf';
-  
-    fetch(cvPath)
-      .then(response => {
-        if (!response.ok) { 
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.blob();
-      })
-      .then(blob => {
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = fileName;
-        document.body.appendChild(link);
-        link.click();
-        window.URL.revokeObjectURL(url);
-        document.body.removeChild(link);
-      })
-      .catch(error => {
-        console.error('Download failed:', error);
-        alert('Failed to download CV. Check the console for details.');
-      });
+    const link = document.createElement('a');
+    link.href = '/assets/BsfinalCv_1.pdf';
+    link.download = 'BsfinalCv.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
   
   const SkillsSection = () => {
