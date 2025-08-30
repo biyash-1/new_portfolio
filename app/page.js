@@ -257,7 +257,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 rounded-full blur-lg opacity-30 animate-pulse" />
                 <div className="relative rounded-full overflow-hidden border-8 border-gray-200 dark:border-slate-800 aspect-square">
                   <Image
-                    src="/assets/myphoto.png"
+                    src="/assets/myphoto3.png"
                     alt="Biyash Shrestha"
                     width={500}
                     height={400}
@@ -283,7 +283,7 @@ export default function Home() {
               >
                 <div className="absolute -inset-2 bg-gradient-to-r rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
                 <Image
-                  src="/assets/myphoto1.png"
+                  src="/assets/myphoto4.png"
                   alt="Biyash Shrestha"
                   width={500}
                   height={400}
