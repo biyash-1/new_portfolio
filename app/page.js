@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "@/components/ui/button";
@@ -12,7 +12,7 @@ import {
   GraduationCap,
 } from "lucide-react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import {motion}  from "framer-motion";
 import {
   SiReact,
   SiTailwindcss,
@@ -27,8 +27,8 @@ export default function Home() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/assets/BsfinalCv_1.pdf';
-    link.download = 'BsfinalCv.pdf';
+    link.href = '/assets/finalcv.pdf';
+    link.download = 'finalcv.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
@@ -260,7 +260,7 @@ export default function Home() {
                     src="/assets/myphoto.png"
                     alt="Biyash Shrestha"
                     width={500}
-                    height={500}
+                    height={400}
                     className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -270,99 +270,99 @@ export default function Home() {
         </div>
       </section>
 
-      <section id = "about" className="py-20 bg-slate-50 dark:bg-slate-900">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Profile Image */}
-            <motion.div
-              className="relative group max-w-md mx-auto"
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              viewport={{once:false}}
-              transition={{ duration: 0.8, ease: "easeIn" }}
-            >
-              <div className="absolute -inset-2 bg-gradient-to-r rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-              <Image
-                src="/assets/myphoto.png"
-                alt="Biyash Shrestha"
-                width={500}
-                height={400}
+        <section id = "about" className="py-20 bg-slate-50 dark:bg-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Side - Profile Image */}
+              <motion.div
+                className="relative group max-w-md max-h-md mx-auto"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                viewport={{once:false}}
+                transition={{ duration: 0.8, ease: "easeIn" }}
+              >
+                <div className="absolute -inset-2 bg-gradient-to-r rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <Image
+                  src="/assets/myphoto1.png"
+                  alt="Biyash Shrestha"
+                  width={500}
+                  height={400}
 
-                className=" md:block hidden rounded-2xl border-8 border-white dark:border-slate-800 shadow-xl"
-              />
-            </motion.div>
+                  className=" md:block hidden rounded-2xl border-4 border-white dark:border-slate-800 shadow-xl"
+                />
+              </motion.div>
 
-            {/* Right Side - About Content */}
-            <motion.div
-              className="space-y-6"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              viewport={{once:false}}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-red-500 bg-clip-text text-transparent">
-                About Me
-              </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                Passionate Full Stack Developer with expertise in modern web
-                technologies. I specialize in creating robust, scalable
-                applications with intuitive user interfaces. With 2+ years of
-                experience, I bridge the gap between design and technical
-                implementation.
-              </p>
+              {/* Right Side - About Content */}
+              <motion.div
+                className="space-y-6"
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                viewport={{once:false}}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-red-500 bg-clip-text text-transparent">
+                  About Me
+                </h2>
+                <p className="text-lg text-gray-600 dark:text-gray-300">
+                  Passionate Full Stack Developer with expertise in modern web
+                  technologies. I specialize in creating robust, scalable
+                  applications with intuitive user interfaces. With 2+ years of
+                  experience, I bridge the gap between design and technical
+                  implementation.
+                </p>
 
-              {/* Experience Timeline */}
-              <div className="space-y-6">
-                {/* Full Stack Development */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-purple-500/10 rounded-full">
-                    <Code2 className="w-6 h-6 text-purple-500" />
+                {/* Experience Timeline */}
+                <div className="space-y-6">
+                  {/* Full Stack Development */}
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-purple-500/10 rounded-full">
+                      <Code2 className="w-6 h-6 text-purple-500" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold">
+                        Full Stack Development
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Proficient in React, Next.js, Node.js, and modern web
+                        frameworks.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">
-                      Full Stack Development
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Proficient in React, Next.js, Node.js, and modern web
-                      frameworks.
-                    </p>
+
+                  {/* Professional Experience */}
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-red-500/10 rounded-full">
+                      <Briefcase className="w-6 h-6 text-red-500" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold">
+                        Professional Experience
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        Associate Software Engineer at Peak Voyage (4 months).
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Education & Certifications */}
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-blue-500/10 rounded-full">
+                      <GraduationCap className="w-6 h-6 text-blue-500" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold">
+                        Education & Certifications
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        BE in Computer Science | Certified AWS Developer.
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                {/* Professional Experience */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-red-500/10 rounded-full">
-                    <Briefcase className="w-6 h-6 text-red-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">
-                      Professional Experience
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Associate Software Engineer at Peak Voyage (4 months).
-                    </p>
-                  </div>
-                </div>
-
-                {/* Education & Certifications */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-500/10 rounded-full">
-                    <GraduationCap className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">
-                      Education & Certifications
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      BE in Computer Science | Certified AWS Developer.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Skills section */}
       <SkillsSection id = "skills" />
@@ -559,7 +559,7 @@ export default function Home() {
               <input
                 type="text"
                 className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                placeholder="John Doe"
+                placeholder="your name"
               />
             </motion.div>
 
@@ -572,7 +572,7 @@ export default function Home() {
               <input
                 type="email"
                 className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-700 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                placeholder="john@example.com"
+                placeholder="your email"
               />
             </motion.div>
           </div>
