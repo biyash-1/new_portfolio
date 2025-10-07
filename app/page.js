@@ -395,6 +395,14 @@ export default function Home() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
+
+         {
+      title: "Netlinker",
+      description: "A social media platform with posts, comments, and real-time chatting",
+      image: "/assets/netlinker.jpg",
+      live: "https://netlinker-woad.vercel.app/",
+      github: "https://github.com/biyash-1/Netlinker.git"
+    },
         {
           title: "Food Delivery App",
           description: "Full-stack food ordering platform with real-time tracking",
@@ -442,7 +450,7 @@ export default function Home() {
           key={project.title}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+     
           transition={{ duration: 1.2, delay: index * 0.1 }}
           className=" w-full group relative overflow-hidden rounded-2xl bg-white dark:bg-slate-900 shadow-xl hover:shadow-2xl transition-all duration-300"
         >
