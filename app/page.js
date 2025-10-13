@@ -396,6 +396,16 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
 
+
+{
+  title: "AI Pro Tool",
+  description: "An AI-powered tool with text summarization, Q&A, image generation, and translation features — built to boost creativity and productivity.",
+  image: "/assets/ai-pro-tool.jpg",
+  live: "https://ai-pro-tool.vercel.app/",
+  github: "https://github.com/biyash-1/AI-pro-tool.git"
+}
+,
+
          {
       title: "Netlinker",
       description: "A social media platform with posts, comments, and real-time chatting",
