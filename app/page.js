@@ -27,8 +27,8 @@ export default function Home() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/assets/finalcv.pdf';
-    link.download = 'finalcv.pdf';
+    link.href = '/assets/myCv.pdf';
+    link.download = 'myCv.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
