@@ -673,7 +673,7 @@ const SkillsSection = () => {
             Meta Back-End Developer
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Certified by Meta in Developing Back-End Apps with Node.js and Express through Coursera. Gained expertise in RESTful API design, authentication, database integration, and server-side logic.
+            Certified by Meta in Developing Back-End Apps with Node.js and Express through Coursera Gained expertise in RESTful API design, authentication, database integration, and server-side logic.
           </p>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-sm text-green-700 dark:text-green-300">
